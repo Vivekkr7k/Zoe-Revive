@@ -37,7 +37,7 @@ const Commitment = () => {
     const ctx = gsap.context(() => {
       const cards = gsap.utils.toArray<HTMLElement>('.commitment-card')
 
-      cards.forEach((card, index) => {
+      cards.forEach((card) => {
         const content = card.querySelector('.commitment-content')
         
         // Set initial state
