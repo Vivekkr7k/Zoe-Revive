@@ -62,9 +62,9 @@ const Hero = () => {
               transition={{ duration: 1, delay: 0.3, ease: [0.6, -0.05, 0.01, 0.99] }}
               className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight"
             >
-              <span className="block">Break Free</span>
+              <span className="block">Welcome to</span>
               <span className="block bg-gradient-to-r from-sage-300 via-white to-sage-200 bg-clip-text text-transparent">
-                Reclaim Your Life
+                Zoe Revive Trust
               </span>
             </motion.h1>
             
@@ -75,16 +75,7 @@ const Hero = () => {
               transition={{ duration: 1, delay: 0.5 }}
               className="text-xl sm:text-2xl text-white/90 leading-relaxed max-w-2xl"
             >
-              Every day you delay, addiction takes one step more. You've promised yourself "this is the last time." But it keeps coming back—stronger.
-            </motion.p>
-
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.6 }}
-              className="text-lg sm:text-xl text-sage-200 font-semibold"
-            >
-              This is your turning point. Not tomorrow. Not someday. <span className="text-white">Today.</span>
+              Helping you recover from addiction with compassion and expert care.
             </motion.p>
 
             {/* CTA Buttons */}

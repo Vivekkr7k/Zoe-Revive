@@ -21,6 +21,11 @@ import galleryImage13 from '../assets/Gallery/WhatsApp Image 2025-11-28 at 19.22
 import galleryImage14 from '../assets/Gallery/WhatsApp Image 2025-11-28 at 19.22.44_00aeba06.jpg'
 import galleryImage15 from '../assets/Gallery/WhatsApp Image 2025-11-28 at 19.22.44_4a31a181.jpg'
 import galleryImage16 from '../assets/Gallery/WhatsApp Image 2025-11-28 at 19.22.44_c724fac8.jpg'
+import zrtPic1 from '../assets/Gallery/ZRT PICS 1.jpg'
+import zrtPic2 from '../assets/Gallery/ZRT PICS 2.jpg'
+import zrtPic13 from '../assets/Gallery/ZRT PICS 13.JPG'
+import zrtPic14 from '../assets/Gallery/ZRT PICS 14.JPG'
+import zrtPic15 from '../assets/Gallery/ZRT PICS 15.JPG'
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null)
@@ -126,6 +131,36 @@ const Gallery = () => {
       id: 17,
       src: galleryImage16,
       alt: 'Zoe Revive Trust facility',
+      category: 'Facility',
+    },
+    {
+      id: 18,
+      src: zrtPic1,
+      alt: 'Zoe Revive Trust activities and care',
+      category: 'Facility',
+    },
+    {
+      id: 19,
+      src: zrtPic2,
+      alt: 'Zoe Revive Trust activities and care',
+      category: 'Facility',
+    },
+    {
+      id: 20,
+      src: zrtPic13,
+      alt: 'Zoe Revive Trust activities and care',
+      category: 'Facility',
+    },
+    {
+      id: 21,
+      src: zrtPic14,
+      alt: 'Zoe Revive Trust activities and care',
+      category: 'Facility',
+    },
+    {
+      id: 22,
+      src: zrtPic15,
+      alt: 'Zoe Revive Trust activities and care',
       category: 'Facility',
     },
   ]

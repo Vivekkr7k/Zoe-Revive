@@ -7,16 +7,20 @@ import Gallery from './pages/Gallery'
 import Blog from './pages/Blog'
 import Contact from './pages/Contact'
 import Recovery from './pages/Recovery'
+import Education from './pages/Education'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/our-approach" element={<OurApproach />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/services" element={<Services />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/education" element={<Education />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/recovery" element={<Recovery />} />

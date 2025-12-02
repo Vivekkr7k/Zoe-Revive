@@ -7,7 +7,7 @@ const FAQSection = () => {
   const faqs = [
     {
       question: 'What types of addictions do you treat?',
-      answer: 'For your comfort and relaxation, we recommend wearing loose, comfortable clothing that you can easily change out of for massage or body treatments you\'ll typically be draped with a towel.',
+      answer: 'At Zoe Revive Trust, we specialize in treating alcohol and drug addiction. We provide comprehensive treatment programs for individuals struggling with alcohol use disorder and various substance use disorders. Our holistic approach addresses the physical, mental, and spiritual aspects of addiction to support complete recovery.',
     },
     {
       question: 'What treatment programs are available?',

@@ -70,7 +70,7 @@ const WhatIsAlcoholism = () => {
               When someone is addicted to alcohol or drugs, their body gets used to having these substances and may need more and more to feel the same effects. This is known as "tolerance." If the person stops drinking or using suddenly, they might feel sick, shaky, or anxious—these are called "withdrawal symptoms."
             </p>
             <p className="text-neutral-600 text-sm leading-relaxed">
-              For example, a person might get headaches, feel weak, or have trouble sleeping if they don't drink. Over time, alcohol and drugs can harm organs like the liver and make someone look tired and unhealthy, such as not caring about personal hygiene.
+              For instance, a person might get headaches, feel weak, or have trouble sleeping if they don't drink. Over time, alcohol and drugs can harm organs like the liver and make someone look tired and unhealthy, such as not caring about personal hygiene.
             </p>
           </motion.div>
 
@@ -114,7 +114,7 @@ const WhatIsAlcoholism = () => {
               Spiritual health is about feeling hopeful, connected to others, and having a sense of purpose. Alcoholism and drug addiction can make people feel lonely, guilty, or like they've lost their way.
             </p>
             <p className="text-neutral-600 text-sm leading-relaxed">
-              For example, someone might stop caring about what is important to them or stop participating in things that once gave them joy. They may also feel powerless or believe they can't change, which can make recovery even harder.
+              For instance, someone might stop caring about what is important to them or stop participating in things that once gave them joy. They may also feel powerless or believe they can't change, which can make recovery even harder.
             </p>
           </motion.div>
         </div>

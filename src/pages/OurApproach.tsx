@@ -1,28 +1,44 @@
 import { motion } from 'framer-motion'
 import Header from '../components/Header'
-import { Link } from 'react-router-dom'
+import Footer from '../components/Footer'
 
 const OurApproach = () => {
-  const approaches = [
+  const schedule = [
+    { time: '06:00 – 06:15 am', activity: 'Wake Up & Bed Tea' },
+    { time: '06:30 – 07:00 am', activity: 'Prayer and Meditation' },
+    { time: '07:00 – 07:30 am', activity: 'Yoga' },
+    { time: '07:30 – 08:00 am', activity: 'Walk' },
+    { time: '08:00 – 08:30 am', activity: 'Personal Hygiene' },
+    { time: '08:30 – 09:00 am', activity: 'Breakfast' },
+    { time: '09:00 – 09:45 am', activity: 'Silent Hour / Reflection' },
+    { time: '10:00 – 11:00 am', activity: 'Counsellor Classroom Session' },
+    { time: '11:00 – 11:15 am', activity: 'Tea and Snack Break' },
+    { time: '11:15 – 12:30 pm', activity: 'Step Study Workshop' },
+    { time: '12:30 – 01:00 pm', activity: 'Lunch Break' },
+    { time: '01:00 – 02:00 pm', activity: 'Reflection Time' },
+    { time: '02:00 – 03:00 pm', activity: 'Step Session' },
+    { time: '03:00 – 04:30 pm', activity: 'Personality Development, Speaker Sharing/AV Sessions & Tea' },
+    { time: '04:30 – 06:00 pm', activity: 'Indoor and Outdoor Games' },
+    { time: '06:00 – 07:00 pm', activity: 'Personal Hygiene' },
+    { time: '07:00 – 08:00 pm', activity: 'In-house Recovery Meeting & Tea' },
+    { time: '08:15 – 09:00 pm', activity: 'Thoughts and Feelings Session' },
+    { time: '09:00 – 09:30 pm', activity: 'Dinner' },
+    { time: '09:30 – 10:30 pm', activity: 'TV, News, Music' },
+    { time: '10:30 – 10:45 pm', activity: 'Prayers & Lights Out' },
+  ]
+
+  const aspects = [
     {
-      title: 'Evidence-Based Treatment',
-      description: 'Our programs are grounded in the latest research and proven methodologies, ensuring the highest standards of care.',
-      icon: '📊',
+      title: 'Physical',
+      description: 'Detoxification, medical supervision, and physical therapy to help regain strength and health.',
     },
     {
-      title: 'Individual-Centered Care',
-      description: 'We recognize that every person is unique. Our approach is tailored to your specific needs, preferences, and goals.',
-      icon: '👤',
+      title: 'Mental',
+      description: 'Counseling, therapy, and mental health support to overcome psychological dependence and build resilience.',
     },
     {
-      title: 'Multidisciplinary Team',
-      description: 'Our diverse team of specialists works collaboratively to provide comprehensive, integrated care across all aspects of recovery.',
-      icon: '👥',
-    },
-    {
-      title: 'Continuous Improvement',
-      description: 'We regularly evaluate and refine our programs based on outcomes and feedback, ensuring we deliver the best possible care.',
-      icon: '🔄',
+      title: 'Spiritual',
+      description: 'Mindfulness, meditation, and spiritual guidance to foster inner peace and hope.',
     },
   ]
 
@@ -30,63 +46,101 @@ const OurApproach = () => {
     <div className="min-h-screen">
       <Header />
       <main className="pt-20">
-        <section className="relative py-32 lg:py-40 bg-gradient-to-br from-neutral-50 via-sage-50/30 to-sage-100/20">
+        {/* Hero Section */}
+        <section className="relative py-16 lg:py-24 bg-gradient-to-br from-neutral-50 via-sage-50/30 to-sage-100/20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-center mb-20"
+              className="text-center mb-12"
             >
-              <h1 className="text-5xl sm:text-6xl lg:text-display font-bold text-neutral-900 mb-6">
-                Our Approach
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-sage-800 mb-6">
+                Our Treatment Approach
               </h1>
-              <p className="text-xl sm:text-2xl text-neutral-600 max-w-3xl mx-auto leading-relaxed">
-                A comprehensive, compassionate methodology designed to support your complete recovery journey.
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Holistic Recovery Programme */}
+        <section className="relative py-16 lg:py-20 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-100px' }}
+              transition={{ duration: 0.8 }}
+              className="mb-12"
+            >
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-sage-800 mb-6">
+                Holistic Recovery Programme
+              </h2>
+              <p className="text-lg text-neutral-600 leading-relaxed mb-4">
+                At Zoe Revive Trust, we provide a comprehensive programme treating the body, mind, and soul. Our approach is grounded in the Twelve Step philosophy approved by WHO, which has demonstrated the highest recovery rate globally.
+              </p>
+              <p className="text-lg text-neutral-600 leading-relaxed">
+                Recovery is not just abstaining but also involves changing one's attitude, lifestyle, personality, character, and thinking, to sustain lifelong recovery and become a respected member of society.
               </p>
             </motion.div>
 
-            <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
-              {approaches.map((approach, index) => (
+            {/* Daily Programme Schedule */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-100px' }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="mb-16"
+            >
+              <h3 className="text-2xl sm:text-3xl font-bold text-sage-800 mb-8">
+                Daily Programme Schedule
+              </h3>
+              <div className="bg-sage-50 rounded-2xl p-6 lg:p-8">
+                <div className="space-y-4">
+                  {schedule.map((item, index) => (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0, x: -20 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.5, delay: index * 0.03 }}
+                      className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 py-3 border-b border-sage-200 last:border-b-0"
+                    >
+                      <span className="text-sage-700 font-semibold text-sm sm:text-base min-w-[140px] sm:min-w-[180px]">
+                        {item.time}
+                      </span>
+                      <span className="text-neutral-700 text-sm sm:text-base">
+                        –&gt; {item.activity}
+                      </span>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Physical, Mental, Spiritual */}
+            <div className="grid md:grid-cols-3 gap-8">
+              {aspects.map((aspect, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: '-50px' }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
-                  whileHover={{ y: -8, transition: { duration: 0.2 } }}
-                  className="bg-white rounded-3xl p-8 lg:p-10 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-neutral-100"
+                  className="bg-sage-100 rounded-2xl p-8 text-center"
                 >
-                  <div className="text-5xl mb-6">{approach.icon}</div>
-                  <h3 className="text-2xl font-bold text-neutral-900 mb-4">
-                    {approach.title}
-                  </h3>
-                  <p className="text-lg text-neutral-600 leading-relaxed">
-                    {approach.description}
+                  <h4 className="text-2xl font-bold text-sage-800 mb-4">
+                    {aspect.title}
+                  </h4>
+                  <p className="text-neutral-600 leading-relaxed">
+                    {aspect.description}
                   </p>
                 </motion.div>
               ))}
             </div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-center mt-16"
-            >
-              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Link
-                  to="/contact"
-                  className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-sage-600 rounded-full hover:bg-sage-700 transition-colors duration-200 shadow-lg shadow-sage-600/25 focus:outline-none focus:ring-2 focus:ring-sage-600 focus:ring-offset-2"
-                >
-                  Get Started Today
-                </Link>
-              </motion.div>
-            </motion.div>
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   )
 }

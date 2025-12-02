@@ -3,56 +3,58 @@ import teamImage from '../assets/Gallery/Team.jpg'
 
 const TeamSection = () => {
   return (
-    <section className="relative min-h-[80vh] flex items-center bg-gradient-to-br from-neutral-50 via-sage-50/30 to-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20 w-full">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Image */}
+    <section className="relative py-16 lg:py-20 bg-gradient-to-br from-neutral-50 via-sage-50/30 to-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+          {/* Image - Larger and better proportioned */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.8 }}
-            className="relative"
+            className="relative lg:sticky lg:top-24"
           >
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl w-full">
               <img
                 src={teamImage}
                 alt="Zoe Revive Trust Team"
-                className="w-full h-full object-cover"
+                className="w-full h-auto object-contain"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-sage-800/20 to-transparent pointer-events-none" />
             </div>
           </motion.div>
 
-          {/* Text Content */}
+          {/* Text Content - More compact and organized */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.8 }}
-            className="space-y-8"
+            className="space-y-6"
           >
             <div>
-              <p className="text-sage-600 text-sm font-semibold mb-4">• OUR TEAM</p>
-              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-sage-800 leading-tight mb-6">
+              <p className="text-sage-600 text-sm font-semibold mb-3">• OUR TEAM</p>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-sage-800 leading-tight mb-4">
                 Experienced Minds. Caring Hearts. Focused on You.
               </h2>
             </div>
             
-            <p className="text-lg text-neutral-600 leading-relaxed">
-              At Zoe Revive Trust, our dedicated team of professionals brings together years of experience, compassion, and expertise in addiction recovery. We are committed to providing personalized care and support to every individual on their journey to recovery.
-            </p>
+            <div className="space-y-4">
+              <p className="text-base lg:text-lg text-neutral-600 leading-relaxed">
+                At Zoe Revive Trust, our dedicated team of professionals brings together years of experience, compassion, and expertise in addiction recovery. We are committed to providing personalized care and support to every individual on their journey to recovery.
+              </p>
 
-            <p className="text-lg text-neutral-600 leading-relaxed">
-              Our multidisciplinary team includes counselors, therapists, medical professionals, and support staff who work together to create a safe, nurturing environment where healing can flourish.
-            </p>
+              <p className="text-base lg:text-lg text-neutral-600 leading-relaxed">
+                Our multidisciplinary team includes counselors, therapists, medical professionals, and support staff who work together to create a safe, nurturing environment where healing can flourish.
+              </p>
+            </div>
 
-            {/* Key Features */}
-            <div className="space-y-4 pt-4">
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 rounded-full bg-sage-600 flex items-center justify-center flex-shrink-0 mt-1">
+            {/* Key Features - More compact grid layout */}
+            <div className="grid sm:grid-cols-2 gap-4 pt-2">
+              <div className="flex items-start space-x-3">
+                <div className="w-10 h-10 rounded-full bg-sage-600 flex items-center justify-center flex-shrink-0 mt-1">
                   <svg
-                    className="w-6 h-6 text-white"
+                    className="w-5 h-5 text-white"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -66,17 +68,17 @@ const TeamSection = () => {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-sage-800 mb-2">Expert Team</h3>
-                  <p className="text-neutral-600 leading-relaxed">
-                    Our team consists of certified professionals with extensive experience in addiction treatment and recovery support.
+                  <h3 className="text-lg font-bold text-sage-800 mb-1">Expert Team</h3>
+                  <p className="text-sm text-neutral-600 leading-relaxed">
+                    Certified professionals with extensive experience in addiction treatment.
                   </p>
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 rounded-full bg-sage-600 flex items-center justify-center flex-shrink-0 mt-1">
+              <div className="flex items-start space-x-3">
+                <div className="w-10 h-10 rounded-full bg-sage-600 flex items-center justify-center flex-shrink-0 mt-1">
                   <svg
-                    className="w-6 h-6 text-white"
+                    className="w-5 h-5 text-white"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -90,17 +92,17 @@ const TeamSection = () => {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-sage-800 mb-2">Compassionate Care</h3>
-                  <p className="text-neutral-600 leading-relaxed">
-                    We approach every individual with empathy, understanding, and genuine care for their wellbeing and recovery journey.
+                  <h3 className="text-lg font-bold text-sage-800 mb-1">Compassionate Care</h3>
+                  <p className="text-sm text-neutral-600 leading-relaxed">
+                    Empathy, understanding, and genuine care for your wellbeing.
                   </p>
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 rounded-full bg-sage-600 flex items-center justify-center flex-shrink-0 mt-1">
+              <div className="flex items-start space-x-3 sm:col-span-2">
+                <div className="w-10 h-10 rounded-full bg-sage-600 flex items-center justify-center flex-shrink-0 mt-1">
                   <svg
-                    className="w-6 h-6 text-white"
+                    className="w-5 h-5 text-white"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -114,9 +116,9 @@ const TeamSection = () => {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-sage-800 mb-2">24/7 Support</h3>
-                  <p className="text-neutral-600 leading-relaxed">
-                    Our team is available around the clock to provide support, guidance, and care when you need it most.
+                  <h3 className="text-lg font-bold text-sage-800 mb-1">24/7 Support</h3>
+                  <p className="text-sm text-neutral-600 leading-relaxed">
+                    Available around the clock to provide support, guidance, and care when you need it most.
                   </p>
                 </div>
               </div>

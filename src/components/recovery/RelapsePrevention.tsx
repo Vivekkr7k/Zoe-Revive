@@ -166,7 +166,7 @@ const RelapsePrevention = () => {
                 <div>
                   <h4 className="font-semibold text-sage-700 mb-2">Offer Supportive Company</h4>
                   <p className="text-neutral-600 leading-relaxed">
-                    Join them in sober activities and help set boundaries, for example, by reminding them it's okay to say "no" at events or leave places where alcohol or drugs are served.
+                    Join them in sober activities and help set boundaries, for instance, by reminding them it's okay to say "no" at events or leave places where alcohol or drugs are served.
                   </p>
                 </div>
               </div>

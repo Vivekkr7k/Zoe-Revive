@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import image1 from '../assets/Gallery/WhatsApp Image 2025-11-28 at 19.22.43_67c95436.jpg'
+import image1 from '../assets/Gallery/ZRT PICS 14.JPG'
 import image2 from '../assets/Gallery/WhatsApp Image 2025-11-28 at 19.22.41_28c0669a.jpg'
 import image3 from '../assets/Gallery/2.jpg'
 

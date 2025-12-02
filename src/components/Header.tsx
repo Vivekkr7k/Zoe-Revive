@@ -30,11 +30,11 @@ const Header = () => {
 
   const navLinks = [
     { path: '/', label: 'Home' },
-    { path: '/recovery', label: 'Recovery' },
     { path: '/about-us', label: 'About Us' },
-    { path: '/services', label: 'Services' },
+    { path: '/our-approach', label: 'Treatment' },
     { path: '/gallery', label: 'Gallery' },
-    { path: '/blog', label: 'Blog' },
+    { path: '/education', label: 'Education' },
+    { path: '/blog', label: 'News' },
     { path: '/contact', label: 'Contact' },
   ]
 

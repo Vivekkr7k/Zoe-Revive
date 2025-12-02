@@ -143,6 +143,71 @@ const AboutUs = () => {
           </div>
         </section>
 
+        {/* Our Team Section */}
+        <section className="relative min-h-[80vh] flex items-center bg-gradient-to-br from-sage-50/50 via-neutral-50 to-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20 w-full">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-100px' }}
+              transition={{ duration: 0.8 }}
+              className="text-center mb-16"
+            >
+              <p className="text-sage-600 text-sm font-semibold mb-3">• OUR TEAM</p>
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-sage-800 mb-6">
+                Our Team
+              </h2>
+              <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
+                Meet the dedicated professionals committed to your recovery journey
+              </p>
+            </motion.div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+              {[
+                { name: 'Robert Santosh Kumar', role: 'Founder' },
+                { name: 'Anand.K.V', role: 'Trustee' },
+                { name: 'John Peter', role: 'Manager' },
+                { name: 'Kabilan', role: 'Counselor' },
+                { name: 'Kanikaswamy', role: 'Counselor' },
+                { name: 'Shiva Kumar', role: 'Counselor' },
+                { name: 'Ethiraj', role: 'Counselor' },
+                { name: 'Neil Anthony', role: 'Counselor' },
+                { name: 'Madhan', role: 'Care Taker' },
+                { name: 'Hemadri', role: 'Care Taker' },
+                { name: 'K.Paneendra', role: 'Care Taker' },
+                { name: 'Fredrick Able', role: 'Care Taker' },
+                { name: 'Vincent James', role: 'Cook' },
+                { name: 'Celestine', role: 'Driver' },
+              ].map((member, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: '-50px' }}
+                  transition={{ duration: 0.6, delay: index * 0.05 }}
+                  className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-sage-100"
+                >
+                  <div className="flex items-start space-x-4">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 rounded-full bg-sage-500 flex items-center justify-center text-white font-bold text-lg">
+                        {member.name.charAt(0)}
+                      </div>
+                    </div>
+                    <div className="flex-grow">
+                      <h3 className="text-lg font-bold text-sage-800 mb-1">
+                        {member.name}
+                      </h3>
+                      <p className="text-sm text-sage-600 font-medium">
+                        {member.role}
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
       </main>
       <Footer />
     </div>
