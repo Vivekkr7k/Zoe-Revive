@@ -5,27 +5,28 @@ import Footer from '../components/Footer'
 
 // Import gallery images
 import teamImage from '../assets/Gallery/Team.jpg'
-import galleryImage1 from '../assets/Gallery/WhatsApp Image 2025-11-28 at 19.22.37_14aa7c94.jpg'
-import galleryImage2 from '../assets/Gallery/WhatsApp Image 2025-11-28 at 19.22.38_eb8f70ae.jpg'
-import galleryImage3 from '../assets/Gallery/WhatsApp Image 2025-11-28 at 19.22.39_ffed6d6c.jpg'
-import galleryImage4 from '../assets/Gallery/WhatsApp Image 2025-11-28 at 19.22.40_7e7a74e2.jpg'
-import galleryImage5 from '../assets/Gallery/WhatsApp Image 2025-11-28 at 19.22.41_28c0669a.jpg'
-import galleryImage6 from '../assets/Gallery/WhatsApp Image 2025-11-28 at 19.22.41_7b284ba3.jpg'
-import galleryImage7 from '../assets/Gallery/WhatsApp Image 2025-11-28 at 19.22.41_f4042d0d.jpg'
-import galleryImage8 from '../assets/Gallery/WhatsApp Image 2025-11-28 at 19.22.42_105bfe26.jpg'
-import galleryImage9 from '../assets/Gallery/WhatsApp Image 2025-11-28 at 19.22.42_2710264a.jpg'
-import galleryImage10 from '../assets/Gallery/WhatsApp Image 2025-11-28 at 19.22.42_3e98c004.jpg'
-import galleryImage11 from '../assets/Gallery/WhatsApp Image 2025-11-28 at 19.22.43_2c221b52.jpg'
-import galleryImage12 from '../assets/Gallery/WhatsApp Image 2025-11-28 at 19.22.43_67c95436.jpg'
-import galleryImage13 from '../assets/Gallery/WhatsApp Image 2025-11-28 at 19.22.43_cb219753.jpg'
-import galleryImage14 from '../assets/Gallery/WhatsApp Image 2025-11-28 at 19.22.44_00aeba06.jpg'
-import galleryImage15 from '../assets/Gallery/WhatsApp Image 2025-11-28 at 19.22.44_4a31a181.jpg'
-import galleryImage16 from '../assets/Gallery/WhatsApp Image 2025-11-28 at 19.22.44_c724fac8.jpg'
 import zrtPic1 from '../assets/Gallery/ZRT PICS 1.jpg'
 import zrtPic2 from '../assets/Gallery/ZRT PICS 2.jpg'
+import zrtPic3 from '../assets/Gallery/ZRT PICS 3.jpg'
+import zrtPic4 from '../assets/Gallery/ZRT PICS 4.jpg'
+import zrtPic5 from '../assets/Gallery/ZRT PICS 5.jpg'
+import zrtPic6 from '../assets/Gallery/ZRT PICS 6.JPG'
+import zrtPic7 from '../assets/Gallery/ZRT PICS 7.JPG'
+import zrtPic8 from '../assets/Gallery/ZRT PICS 8.JPG'
+import zrtPic9 from '../assets/Gallery/ZRT PICS 9.JPG'
+import zrtPic10 from '../assets/Gallery/ZRT PICS 10.JPG'
+import zrtPic11 from '../assets/Gallery/ZRT PICS 11.jpg'
+import zrtPic12 from '../assets/Gallery/ZRT PICS 12.JPG'
 import zrtPic13 from '../assets/Gallery/ZRT PICS 13.JPG'
 import zrtPic14 from '../assets/Gallery/ZRT PICS 14.JPG'
 import zrtPic15 from '../assets/Gallery/ZRT PICS 15.JPG'
+import zrtPic16 from '../assets/Gallery/ZRT PICS 16.JPG'
+import zrtPic17 from '../assets/Gallery/ZRT PICS 17.JPG'
+import zrtPic18 from '../assets/Gallery/ZRT PICS 18.JPG'
+import zrtPic19 from '../assets/Gallery/ZRT PICS 19.JPG'
+import zrtPic20 from '../assets/Gallery/ZRT PICS 20.jpg'
+import zrtPic21 from '../assets/Gallery/ZRT PICS 21.jpg'
+import zrtPic22 from '../assets/Gallery/ZRT PICS 22.jpg'
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null)
@@ -39,128 +40,134 @@ const Gallery = () => {
     },
     {
       id: 2,
-      src: galleryImage1,
-      alt: 'Zoe Revive Trust facility',
+      src: zrtPic1,
+      alt: 'Common area with seating and plants',
       category: 'Facility',
     },
     {
       id: 3,
-      src: galleryImage2,
-      alt: 'Zoe Revive Trust facility',
+      src: zrtPic2,
+      alt: 'Aquarium and plants',
       category: 'Facility',
     },
     {
       id: 4,
-      src: galleryImage3,
-      alt: 'Zoe Revive Trust facility',
+      src: zrtPic3,
+      alt: 'Kitchen area',
       category: 'Facility',
     },
     {
       id: 5,
-      src: galleryImage4,
-      alt: 'Zoe Revive Trust facility',
+      src: zrtPic4,
+      alt: 'Office and reception area',
       category: 'Facility',
     },
     {
       id: 6,
-      src: galleryImage5,
-      alt: 'Zoe Revive Trust facility',
+      src: zrtPic5,
+      alt: 'Medical examination room',
       category: 'Facility',
     },
     {
       id: 7,
-      src: galleryImage6,
-      alt: 'Zoe Revive Trust facility',
+      src: zrtPic6,
+      alt: 'Dormitory room',
       category: 'Facility',
     },
     {
       id: 8,
-      src: galleryImage7,
-      alt: 'Zoe Revive Trust facility',
+      src: zrtPic7,
+      alt: 'Dormitory room',
       category: 'Facility',
     },
     {
       id: 9,
-      src: galleryImage8,
-      alt: 'Zoe Revive Trust facility',
+      src: zrtPic8,
+      alt: 'Large dormitory room',
       category: 'Facility',
     },
     {
       id: 10,
-      src: galleryImage9,
-      alt: 'Zoe Revive Trust facility',
+      src: zrtPic9,
+      alt: 'Dormitory room view',
       category: 'Facility',
     },
     {
       id: 11,
-      src: galleryImage10,
-      alt: 'Zoe Revive Trust facility',
-      category: 'Facility',
+      src: zrtPic10,
+      alt: 'Classroom training session',
+      category: 'Therapy',
     },
     {
       id: 12,
-      src: galleryImage11,
-      alt: 'Zoe Revive Trust facility',
-      category: 'Facility',
+      src: zrtPic11,
+      alt: 'Group session and presentation',
+      category: 'Therapy',
     },
     {
       id: 13,
-      src: galleryImage12,
-      alt: 'Zoe Revive Trust facility',
-      category: 'Facility',
+      src: zrtPic12,
+      alt: 'Interactive group discussion',
+      category: 'Therapy',
     },
     {
       id: 14,
-      src: galleryImage13,
-      alt: 'Zoe Revive Trust facility',
-      category: 'Facility',
+      src: zrtPic13,
+      alt: 'Yoga session',
+      category: 'Therapy',
     },
     {
       id: 15,
-      src: galleryImage14,
-      alt: 'Zoe Revive Trust facility',
-      category: 'Facility',
+      src: zrtPic14,
+      alt: 'Yoga practice',
+      category: 'Therapy',
     },
     {
       id: 16,
-      src: galleryImage15,
-      alt: 'Zoe Revive Trust facility',
-      category: 'Facility',
+      src: zrtPic15,
+      alt: 'Meditation session',
+      category: 'Therapy',
     },
     {
       id: 17,
-      src: galleryImage16,
-      alt: 'Zoe Revive Trust facility',
-      category: 'Facility',
+      src: zrtPic16,
+      alt: 'Counseling session with life skills chart',
+      category: 'Therapy',
     },
     {
       id: 18,
-      src: zrtPic1,
-      alt: 'Zoe Revive Trust activities and care',
+      src: zrtPic17,
+      alt: 'Chess game activity',
       category: 'Facility',
     },
     {
       id: 19,
-      src: zrtPic2,
-      alt: 'Zoe Revive Trust activities and care',
+      src: zrtPic18,
+      alt: 'Board game activity',
       category: 'Facility',
     },
     {
       id: 20,
-      src: zrtPic13,
-      alt: 'Zoe Revive Trust activities and care',
+      src: zrtPic19,
+      alt: 'Carrom board game',
       category: 'Facility',
     },
     {
       id: 21,
-      src: zrtPic14,
-      alt: 'Zoe Revive Trust activities and care',
+      src: zrtPic20,
+      alt: 'Personal storage lockers',
       category: 'Facility',
     },
     {
       id: 22,
-      src: zrtPic15,
-      alt: 'Zoe Revive Trust activities and care',
+      src: zrtPic21,
+      alt: 'Water purification system',
+      category: 'Facility',
+    },
+    {
+      id: 23,
+      src: zrtPic22,
+      alt: 'Bathroom facilities',
       category: 'Facility',
     },
   ]

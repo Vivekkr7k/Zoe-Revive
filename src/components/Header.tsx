@@ -61,7 +61,7 @@ const Header = () => {
               <img
                 src={logoImage}
                 alt="ZOE REVIVE TRUST Logo"
-                className="h-16 sm:h-20 w-auto"
+                className="h-20 sm:h-24 w-auto"
               />
             </motion.div>
           </Link>

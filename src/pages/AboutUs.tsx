@@ -172,6 +172,7 @@ const AboutUs = () => {
                 { name: 'Shiva Kumar', role: 'Counselor' },
                 { name: 'Ethiraj', role: 'Counselor' },
                 { name: 'Neil Anthony', role: 'Counselor' },
+                { name: 'C.L.Paulraj', role: 'Counselor' },
                 { name: 'Madhan', role: 'Care Taker' },
                 { name: 'Hemadri', role: 'Care Taker' },
                 { name: 'K.Paneendra', role: 'Care Taker' },

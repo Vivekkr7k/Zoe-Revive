@@ -10,22 +10,22 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    name: 'Brooklyn Simmons',
+    name: 'Rajesh Kumar',
     role: 'Former Patient',
     text: 'Zoe Revive changed my life. The personalized care and support I received helped me overcome challenges I never thought possible. The team truly cares about your recovery and success.',
-    avatar: 'https://i.pravatar.cc/150?img=1',
+    avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Rajesh&backgroundColor=b6e3f4,c0aede,d1d4f9,ffd5dc,ffdfbf',
   },
   {
-    name: 'Greg Bradley',
+    name: 'Priya Sharma',
     role: 'Former Patient',
     text: 'The evidence-based approach and individualized treatment plan made all the difference. I\'m grateful for the compassionate care and professional expertise of the entire team.',
-    avatar: 'https://i.pravatar.cc/150?img=12',
+    avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Priya&backgroundColor=b6e3f4,c0aede,d1d4f9,ffd5dc,ffdfbf',
   },
   {
-    name: 'Ashley Morley',
+    name: 'Arjun Patel',
     role: 'Former Patient',
     text: 'From day one, I felt supported and understood. The integrated approach addressed all aspects of my recovery, and I couldn\'t be happier with my progress and the lasting results.',
-    avatar: 'https://i.pravatar.cc/150?img=47',
+    avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Arjun&backgroundColor=b6e3f4,c0aede,d1d4f9,ffd5dc,ffdfbf',
   },
 ]
 

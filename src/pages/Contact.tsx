@@ -33,7 +33,6 @@ const Contact = () => {
     'Initial Consultation',
     'Individual Therapy',
     'Group Therapy',
-    'Medical Assessment',
     'Rehabilitation Program',
     'Follow-up Care',
   ]
@@ -238,7 +237,7 @@ const Contact = () => {
               >
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                   <img
-                    src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=1000&fit=crop"
+                    src="https://tse1.explicit.bing.net/th/id/OIP.balDWjP_KJBwpt1vjl0OKwHaE8?rs=1&pid=ImgDetMain&o=7&rm=3"
                     alt="Healthcare professional consulting with patient"
                     className="w-full h-full object-cover aspect-[4/5]"
                   />
@@ -268,11 +267,8 @@ const Contact = () => {
                       </div>
                       <div className="text-white">
                         <p className="font-semibold mb-2">Operating Hours</p>
-                        <p className="text-sm text-white/90 mb-1">
-                          Monday - Friday: 08:00 - 18:00
-                        </p>
                         <p className="text-sm text-white/90">
-                          Saturday: 08:00 - 12:00
+                          24/7 Available
                         </p>
                       </div>
                     </div>

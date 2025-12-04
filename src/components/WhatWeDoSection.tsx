@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import image1 from '../assets/Gallery/ZRT PICS 14.JPG'
-import image2 from '../assets/Gallery/WhatsApp Image 2025-11-28 at 19.22.41_28c0669a.jpg'
-import image3 from '../assets/Gallery/2.jpg'
+import zrtPic14 from '../assets/Gallery/ZRT PICS 14.JPG'
+import zrtPic1 from '../assets/Gallery/ZRT PICS 1.jpg'
+import zrtPic16 from '../assets/Gallery/ZRT PICS 16.JPG'
 
 const WhatWeDoSection = () => {
   const cards = [
@@ -15,15 +15,15 @@ const WhatWeDoSection = () => {
     },
     {
       type: 'light',
-      value: '20+',
+      value: '12+',
       title: 'Years of Experience',
-      description: 'With over 20 years of dedicated service, our clinic has helped thousands find lasting recovery. Our experience ensures you receive trusted,',
+      description: 'With over 12 years of dedicated service, our clinic has helped thousands find lasting recovery. Our experience ensures you receive trusted,',
     },
     {
       type: 'accent',
-      value: '200+',
+      value: '15',
       title: 'Skilled Team Members',
-      description: 'Our team includes over 200 licensed professionals from doctors and therapists to counselors and support staff all working together to deliver.',
+      description: 'Our team includes 15 licensed professionals from doctors and therapists to counselors and support staff all working together to deliver.',
     },
   ]
 
@@ -55,7 +55,7 @@ const WhatWeDoSection = () => {
             className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3]"
           >
             <img
-              src={image1}
+              src={zrtPic14}
               alt="Recovery and treatment activities"
               className="w-full h-full object-cover"
             />
@@ -95,7 +95,7 @@ const WhatWeDoSection = () => {
             className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3]"
           >
             <img
-              src={image2}
+              src={zrtPic1}
               alt="Recovery support and care"
               className="w-full h-full object-cover"
             />
@@ -128,7 +128,7 @@ const WhatWeDoSection = () => {
             className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3]"
           >
             <img
-              src={image3}
+              src={zrtPic16}
               alt="Treatment and wellness activities"
               className="w-full h-full object-cover"
             />

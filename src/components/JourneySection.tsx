@@ -1,29 +1,29 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import galleryImage1 from '../assets/Gallery/WhatsApp Image 2025-11-28 at 19.22.43_cb219753.jpg'
-import galleryImage2 from '../assets/Gallery/WhatsApp Image 2025-11-28 at 19.22.44_00aeba06.jpg'
-import galleryImage3 from '../assets/Gallery/WhatsApp Image 2025-11-28 at 19.22.40_7e7a74e2.jpg'
-import galleryImage4 from '../assets/Gallery/WhatsApp Image 2025-11-28 at 19.22.43_2c221b52.jpg'
+import zrtPic13 from '../assets/Gallery/ZRT PICS 13.JPG'
+import zrtPic10 from '../assets/Gallery/ZRT PICS 10.JPG'
+import zrtPic15 from '../assets/Gallery/ZRT PICS 15.JPG'
+import zrtPic5 from '../assets/Gallery/ZRT PICS 5.jpg'
 
 const JourneySection = () => {
   const journeyImages = [
     {
-      src: galleryImage1,
+      src: zrtPic13,
       alt: 'Yoga and meditation group session',
       title: 'Mindful Practices',
     },
     {
-      src: galleryImage2,
+      src: zrtPic10,
       alt: 'Group therapy and educational session',
       title: 'Group Support',
     },
     {
-      src: galleryImage3,
+      src: zrtPic15,
       alt: 'Meditation and wellness activities',
       title: 'Wellness Journey',
     },
     {
-      src: galleryImage4,
+      src: zrtPic5,
       alt: 'Medical professional providing care',
       title: 'Professional Care',
     },
@@ -82,7 +82,7 @@ const JourneySection = () => {
             </h2>
             
             <p className="text-lg text-neutral-600 leading-relaxed">
-              Zoe Revive is a leading rehabilitation organization. We are dedicated to providing comprehensive, personalized care to help you achieve lasting recovery and improved quality of life. With over 25+ years of experience, we've helped thousands of individuals reclaim their lives.
+              Zoe Revive is a leading rehabilitation organization. We are dedicated to providing comprehensive, personalized care to help you achieve lasting recovery and improved quality of life. With over 12+ years of experience, we've helped thousands of individuals reclaim their lives.
             </p>
 
             {/* Key Features */}
@@ -128,7 +128,7 @@ const JourneySection = () => {
 
             {/* Experience Stat */}
             <div className="pt-4">
-              <div className="text-6xl font-bold text-sage-800">25+</div>
+              <div className="text-6xl font-bold text-sage-800">12+</div>
               <p className="text-lg text-neutral-600 mt-2">Years of experience in our company</p>
             </div>
 
