@@ -47,13 +47,13 @@ const testimonials: Testimonial[] = [
   },
   {
     name: 'Anonymous',
-    role: 'Family member',
+    role: 'recovered addict',
     text: 'We were at our wit\'s end, but Zoe Revive Trust gave us hope. Their compassionate and professional staff helped our loved one overcome addiction and rebuild their life.',
     avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Anonymous3&backgroundColor=b6e3f4,c0aede,d1d4f9,ffd5dc,ffdfbf',
   },
   {
     name: 'Anonymous',
-    role: 'Family member',
+    role: 'recovered addict',
     text: 'I was skeptical at first, but the team at Zoe Revive really care about their patients. They went above and beyond to support our family.',
     avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Anonymous4&backgroundColor=b6e3f4,c0aede,d1d4f9,ffd5dc,ffdfbf',
   },
