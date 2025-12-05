@@ -51,7 +51,7 @@ const Services = () => {
     <div className="min-h-screen">
       <Header />
       <main className="pt-20">
-        <section className="relative min-h-[80vh] flex items-center bg-gradient-to-br from-neutral-50 via-sage-50/30 to-sage-100/20">
+        <section className="relative min-h-[80vh] flex items-center bg-gradient-to-br from-white via-white/30 to-white/20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20 w-full">
             {/* Header */}
             <motion.div
@@ -60,8 +60,8 @@ const Services = () => {
               transition={{ duration: 0.8 }}
               className="text-center mb-16"
             >
-              <p className="text-sage-600 text-sm font-semibold mb-4">• SERVICES</p>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-sage-800 mb-6">
+              <p className="text-[#83997d] text-sm font-semibold mb-4">• SERVICES</p>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#83997d] mb-6">
                 Our Services
               </h1>
               <p className="text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed">
@@ -79,15 +79,16 @@ const Services = () => {
                   viewport={{ once: true, margin: '-50px' }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   whileHover={{ y: -8, transition: { duration: 0.2 } }}
-                  className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-neutral-100"
+                  className="rounded-3xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-[#83997d]"
+                  style={{ backgroundColor: '#83997d' }}
                 >
                   {/* Title */}
-                  <h3 className="text-2xl font-bold text-sage-800 mb-4">
+                  <h3 className="text-2xl font-bold text-white mb-4">
                     {service.title}
                   </h3>
 
                   {/* Description */}
-                  <p className="text-neutral-600 leading-relaxed">
+                  <p className="text-white/90 leading-relaxed">
                     {service.description}
                   </p>
                 </motion.div>
@@ -105,7 +106,7 @@ const Services = () => {
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Link
                   to="/contact"
-                  className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-sage-600 rounded-full hover:bg-sage-700 transition-colors duration-200 shadow-lg shadow-sage-600/25"
+                  className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-[#83997d] rounded-full hover:bg-[#83997d]/90 transition-colors duration-200 shadow-lg shadow-[#83997d]/25"
                 >
                   Book a Consultation
                   <svg

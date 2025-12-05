@@ -52,7 +52,7 @@ const StatisticsSection = () => {
           alt="Therapist providing care"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-sage-800/70" />
+        <div className="absolute inset-0 bg-[#83997d]/70" />
       </div>
 
       {/* Statistics Grid */}

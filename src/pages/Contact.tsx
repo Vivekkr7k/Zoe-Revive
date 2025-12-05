@@ -41,7 +41,7 @@ const Contact = () => {
     <div className="min-h-screen">
       <Header />
       <main className="pt-20">
-        <section className="relative min-h-[80vh] flex items-center bg-neutral-50">
+        <section className="relative min-h-[80vh] flex items-center bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20 w-full">
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               {/* Left Section - Booking Form */}
@@ -50,7 +50,7 @@ const Contact = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
               >
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-sage-800 mb-4">
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#83997d] mb-4">
                   Recovery Starts Here
                 </h1>
                 <p className="text-lg text-neutral-600 mb-8 leading-relaxed">
@@ -74,7 +74,7 @@ const Contact = () => {
                         value={formData.firstName}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 rounded-xl border border-neutral-200 bg-white focus:outline-none focus:ring-2 focus:ring-sage-600 focus:border-transparent transition-all"
+                        className="w-full px-4 py-3 rounded-xl border border-neutral-200 bg-white focus:outline-none focus:ring-2 focus:ring-[#83997d] focus:border-transparent transition-all"
                         placeholder="First Name"
                       />
                     </div>
@@ -92,7 +92,7 @@ const Contact = () => {
                         value={formData.lastName}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 rounded-xl border border-neutral-200 bg-white focus:outline-none focus:ring-2 focus:ring-sage-600 focus:border-transparent transition-all"
+                        className="w-full px-4 py-3 rounded-xl border border-neutral-200 bg-white focus:outline-none focus:ring-2 focus:ring-[#83997d] focus:border-transparent transition-all"
                         placeholder="Last Name"
                       />
                     </div>
@@ -114,7 +114,7 @@ const Contact = () => {
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 rounded-xl border border-neutral-200 bg-white focus:outline-none focus:ring-2 focus:ring-sage-600 focus:border-transparent transition-all"
+                        className="w-full px-4 py-3 rounded-xl border border-neutral-200 bg-white focus:outline-none focus:ring-2 focus:ring-[#83997d] focus:border-transparent transition-all"
                         placeholder="Email Address"
                       />
                     </div>
@@ -132,7 +132,7 @@ const Contact = () => {
                         value={formData.phone}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 rounded-xl border border-neutral-200 bg-white focus:outline-none focus:ring-2 focus:ring-sage-600 focus:border-transparent transition-all"
+                        className="w-full px-4 py-3 rounded-xl border border-neutral-200 bg-white focus:outline-none focus:ring-2 focus:ring-[#83997d] focus:border-transparent transition-all"
                         placeholder="Phone Number"
                       />
                     </div>
@@ -153,7 +153,7 @@ const Contact = () => {
                         value={formData.service}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 rounded-xl border border-neutral-200 bg-white focus:outline-none focus:ring-2 focus:ring-sage-600 focus:border-transparent transition-all appearance-none pr-10"
+                        className="w-full px-4 py-3 rounded-xl border border-neutral-200 bg-white focus:outline-none focus:ring-2 focus:ring-[#83997d] focus:border-transparent transition-all appearance-none pr-10"
                       >
                         {services.map((service, index) => (
                           <option key={index} value={service === 'Select a service' ? '' : service}>
@@ -195,7 +195,7 @@ const Contact = () => {
                         value={formData.date}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 rounded-xl border border-neutral-200 bg-white focus:outline-none focus:ring-2 focus:ring-sage-600 focus:border-transparent transition-all pr-10"
+                        className="w-full px-4 py-3 rounded-xl border border-neutral-200 bg-white focus:outline-none focus:ring-2 focus:ring-[#83997d] focus:border-transparent transition-all pr-10"
                         placeholder="dd-mm-yyyy"
                       />
                       <div className="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none">
@@ -221,7 +221,7 @@ const Contact = () => {
                     type="submit"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    className="w-full px-8 py-4 text-base font-semibold text-white bg-sage-600 rounded-xl hover:bg-sage-700 transition-colors duration-200 shadow-lg shadow-sage-600/25 focus:outline-none focus:ring-2 focus:ring-sage-600 focus:ring-offset-2 mt-6"
+                    className="w-full px-8 py-4 text-base font-semibold text-white bg-[#83997d] rounded-xl hover:bg-[#83997d] transition-colors duration-200 shadow-lg shadow-[#83997d]/25 focus:outline-none focus:ring-2 focus:ring-[#83997d] focus:ring-offset-2 mt-6"
                   >
                     Book An Appointment
                   </motion.button>
@@ -247,12 +247,12 @@ const Contact = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.4 }}
-                    className="absolute bottom-6 left-6 bg-sage-800 rounded-2xl p-6 shadow-xl max-w-xs"
+                    className="absolute bottom-6 left-6 bg-[#83997d] rounded-2xl p-6 shadow-xl max-w-xs"
                   >
                     <div className="flex items-start space-x-3">
                       <div className="flex-shrink-0">
                         <svg
-                          className="w-6 h-6 text-sage-400"
+                          className="w-6 h-6 text-white"
                           fill="none"
                           stroke="currentColor"
                           viewBox="0 0 24 24"

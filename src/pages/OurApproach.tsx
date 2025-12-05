@@ -47,7 +47,7 @@ const OurApproach = () => {
       <Header />
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="relative py-16 lg:py-24 bg-gradient-to-br from-neutral-50 via-sage-50/30 to-sage-100/20">
+        <section className="relative py-16 lg:py-24 bg-gradient-to-br from-white via-white/30 to-white/20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -55,7 +55,7 @@ const OurApproach = () => {
               transition={{ duration: 0.8 }}
               className="text-center mb-12"
             >
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-sage-800 mb-6">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#83997d] mb-6">
                 Our Treatment Approach
               </h1>
             </motion.div>
@@ -72,7 +72,7 @@ const OurApproach = () => {
               transition={{ duration: 0.8 }}
               className="mb-12"
             >
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-sage-800 mb-6">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#83997d] mb-6">
                 Holistic Recovery Programme
               </h2>
               <p className="text-lg text-neutral-600 leading-relaxed mb-4">
@@ -91,10 +91,10 @@ const OurApproach = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="mb-16"
             >
-              <h3 className="text-2xl sm:text-3xl font-bold text-sage-800 mb-8">
+              <h3 className="text-2xl sm:text-3xl font-bold text-[#83997d] mb-8">
                 Daily Programme Schedule
               </h3>
-              <div className="bg-sage-50 rounded-2xl p-6 lg:p-8">
+              <div className="bg-white rounded-2xl p-6 lg:p-8">
                 <div className="space-y-4">
                   {schedule.map((item, index) => (
                     <motion.div
@@ -103,9 +103,9 @@ const OurApproach = () => {
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.5, delay: index * 0.03 }}
-                      className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 py-3 border-b border-sage-200 last:border-b-0"
+                      className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 py-3 border-b border-[#83997d] last:border-b-0"
                     >
-                      <span className="text-sage-700 font-semibold text-sm sm:text-base min-w-[140px] sm:min-w-[180px]">
+                      <span className="text-[#83997d] font-semibold text-sm sm:text-base min-w-[140px] sm:min-w-[180px]">
                         {item.time}
                       </span>
                       <span className="text-neutral-700 text-sm sm:text-base">
@@ -126,12 +126,13 @@ const OurApproach = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: '-50px' }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="bg-sage-100 rounded-2xl p-8 text-center"
+                  className="rounded-2xl p-8 text-center"
+                  style={{ backgroundColor: '#83997d' }}
                 >
-                  <h4 className="text-2xl font-bold text-sage-800 mb-4">
+                  <h4 className="text-2xl font-bold text-white mb-4">
                     {aspect.title}
                   </h4>
-                  <p className="text-neutral-600 leading-relaxed">
+                  <p className="text-white/90 leading-relaxed">
                     {aspect.description}
                   </p>
                 </motion.div>

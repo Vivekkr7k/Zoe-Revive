@@ -6,7 +6,7 @@ const Hero = () => {
   const [currentStat, setCurrentStat] = useState(0)
   
   const stats = [
-    { number: '90%', label: 'Recovery Success Rate', icon: '✓' },
+    { number: '94%', label: 'Recovery Success Rate', icon: '✓' },
     { number: '24/7', label: 'Support Available', icon: '🕐' },
     { number: '1000+', label: 'Lives Transformed', icon: '❤️' },
   ]
@@ -20,20 +20,14 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background with gradient overlay */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1920&h=1080&fit=crop"
-          alt="Recovery and healing"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-br from-sage-900/85 via-sage-800/80 to-sage-900/85" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(79,70,70,0.3),transparent_50%)]" />
+      {/* Background with color */}
+      <div className="absolute inset-0 z-0" style={{ backgroundColor: '#83997d' }}>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#83997d]/95 via-[#83997d]/90 to-[#83997d]/95" />
       </div>
 
       {/* Animated background elements */}
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-sage-400/10 rounded-full blur-3xl -z-10 animate-pulse" />
-      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-sage-500/10 rounded-full blur-3xl -z-10 animate-pulse" style={{ animationDelay: '1s' }} />
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#83997d]/10 rounded-full blur-3xl -z-10 animate-pulse" />
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#83997d]/10 rounded-full blur-3xl -z-10 animate-pulse" style={{ animationDelay: '1s' }} />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 lg:py-40 w-full">
         <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
@@ -51,19 +45,18 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="inline-flex items-center space-x-2 px-4 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20"
             >
-              <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+              <span className="w-2 h-2 bg-[#83997d] rounded-full animate-pulse" />
               <span className="text-sm font-medium">Your Journey to Recovery Starts Here</span>
             </motion.div>
 
             {/* Main Heading */}
             <motion.h1
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 1, y: 0 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.3, ease: [0.6, -0.05, 0.01, 0.99] }}
               className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight"
             >
               <span className="block">Welcome to</span>
-              <span className="block bg-gradient-to-r from-sage-300 via-white to-sage-200 bg-clip-text text-transparent">
+              <span className="block text-white">
                 Zoe Revive Trust
               </span>
             </motion.h1>
@@ -88,7 +81,7 @@ const Hero = () => {
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Link
                   to="/contact"
-                  className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-sage-900 bg-white rounded-full hover:bg-sage-50 transition-all duration-200 shadow-xl shadow-black/20 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-sage-900"
+                  className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-[#83997d] bg-white rounded-full hover:bg-white transition-all duration-200 shadow-xl shadow-black/20 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#83997d]"
                 >
                   Get Help Now
                   <svg
@@ -110,7 +103,7 @@ const Hero = () => {
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Link
                   to="/recovery"
-                  className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-white/10 backdrop-blur-md rounded-full border-2 border-white/30 hover:bg-white/20 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-sage-900"
+                  className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-white/10 backdrop-blur-md rounded-full border-2 border-white/30 hover:bg-white/20 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#83997d]"
                 >
                   Learn About Recovery
                   <svg
@@ -138,19 +131,19 @@ const Hero = () => {
               className="flex flex-wrap items-center gap-6 pt-4 text-sm text-white/80"
             >
               <div className="flex items-center space-x-2">
-                <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-5 h-5 text-[#83997d]" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 <span>Confidential & Safe</span>
               </div>
               <div className="flex items-center space-x-2">
-                <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-5 h-5 text-[#83997d]" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 <span>Expert Care</span>
               </div>
               <div className="flex items-center space-x-2">
-                <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-5 h-5 text-[#83997d]" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 <span>Proven Methods</span>
@@ -189,7 +182,7 @@ const Hero = () => {
                   <motion.div
                     initial={{ scaleX: 0 }}
                     animate={{ scaleX: 1 }}
-                    className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-sage-400 to-white rounded-b-2xl"
+                    className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#83997d] to-white rounded-b-2xl"
                   />
                 )}
               </motion.div>

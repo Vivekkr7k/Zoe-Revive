@@ -42,10 +42,10 @@ const HowItWorksSection = () => {
   ]
 
   const statistics = [
-    { value: '6k+', label: 'Successful Recoveries' },
-    { value: '93%', label: 'Satisfaction Rate' },
-    { value: '16+', label: 'Years of Excellence' },
-    { value: '150+', label: 'Certified Professionals' },
+    { value: '1k+', label: 'Successful Recoveries' },
+    { value: '94%', label: 'Satisfaction Rate' },
+    { value: '12+', label: 'Years of Excellence' },
+    { value: '15', label: 'Certified Professionals' },
   ]
 
   return (

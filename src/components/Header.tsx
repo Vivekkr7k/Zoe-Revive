@@ -34,7 +34,6 @@ const Header = () => {
     { path: '/our-approach', label: 'Treatment' },
     { path: '/gallery', label: 'Gallery' },
     { path: '/education', label: 'Education' },
-    { path: '/blog', label: 'News' },
     { path: '/contact', label: 'Contact' },
   ]
 
@@ -101,7 +100,7 @@ const Header = () => {
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Link
               to="/contact"
-              className="hidden md:inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white bg-sage-600 rounded-full hover:bg-sage-700 transition-colors duration-200 shadow-lg shadow-sage-600/25 focus:outline-none focus:ring-2 focus:ring-sage-600 focus:ring-offset-2"
+              className="hidden md:inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-[#83997d] bg-white rounded-full hover:bg-white/90 transition-colors duration-200 shadow-lg shadow-white/25 focus:outline-none focus:ring-2 focus:ring-[#83997d] focus:ring-offset-2"
             >
               Get Help Now
             </Link>
@@ -173,7 +172,7 @@ const Header = () => {
           ))}
           <Link
             to="/contact"
-            className="block mt-4 px-6 py-3 text-sm font-semibold text-center text-white bg-sage-600 rounded-full hover:bg-sage-700 transition-colors duration-200"
+            className="block mt-4 px-6 py-3 text-sm font-semibold text-center text-[#83997d] bg-white rounded-full hover:bg-white/90 transition-colors duration-200"
           >
             Get Help Now
           </Link>

@@ -185,7 +185,7 @@ const Gallery = () => {
     <div className="min-h-screen">
       <Header />
       <main className="pt-20">
-        <section className="relative min-h-[80vh] flex items-center bg-gradient-to-br from-neutral-50 via-sage-50/30 to-sage-100/20">
+        <section className="relative min-h-[80vh] flex items-center bg-gradient-to-br from-white via-white/30 to-white/20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20 w-full">
             {/* Header */}
             <motion.div
@@ -194,8 +194,8 @@ const Gallery = () => {
               transition={{ duration: 0.8 }}
               className="text-center mb-12"
             >
-              <p className="text-sage-600 text-sm font-semibold mb-4">• GALLERY</p>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-sage-800 mb-6">
+              <p className="text-[#83997d] text-sm font-semibold mb-4">• GALLERY</p>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#83997d] mb-6">
                 Our Facility & Care in Action
               </h1>
               <p className="text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed">
@@ -216,8 +216,8 @@ const Gallery = () => {
                   onClick={() => setActiveCategory(category)}
                   className={`px-6 py-2 rounded-full font-medium transition-colors duration-200 shadow-md ${
                     activeCategory === category
-                      ? 'bg-sage-600 text-white'
-                      : 'bg-white text-sage-700 hover:bg-sage-100'
+                      ? 'bg-[#83997d] text-white'
+                      : 'bg-white text-[#83997d] hover:bg-[#83997d] hover:text-white border border-[#83997d]'
                   }`}
                 >
                   {category}
@@ -245,7 +245,7 @@ const Gallery = () => {
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                     />
                     {/* Overlay on Hover */}
-                    <div className="absolute inset-0 bg-sage-800/0 group-hover:bg-sage-800/40 transition-colors duration-300 flex items-center justify-center">
+                    <div className="absolute inset-0 bg-[#83997d]/0 group-hover:bg-[#83997d]/40 transition-colors duration-300 flex items-center justify-center">
                       <motion.div
                         initial={{ opacity: 0, scale: 0.8 }}
                         whileHover={{ opacity: 1, scale: 1 }}

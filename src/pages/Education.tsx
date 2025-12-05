@@ -80,15 +80,15 @@ const Education = () => {
         { name: 'NIH - Alcohol Use Disorder Research', url: 'https://www.ncbi.nlm.nih.gov/books/NBK549783/' },
         { name: 'WHO - Alcohol Fact Sheet', url: 'https://www.who.int/news-room/fact-sheets/detail/alcohol' },
         { name: 'NIAAA - National Institute on Alcohol Abuse', url: 'https://www.niaaa.nih.gov/' },
-        { name: 'SAMHSA - Substance Abuse Resources', url: 'https://www.samhsa.gov/' },
+        { name: 'Mayo Clinic - Alcohol Use Disorder', url: 'https://www.mayoclinic.org/diseases-conditions/alcohol-use-disorder' },
       ],
     },
     {
       category: 'Educational Videos',
       items: [
-        { name: 'TED Talks on Addiction & Recovery', url: 'https://www.ted.com/talks' },
         { name: 'Recovery Documentaries', url: 'https://www.youtube.com/results?search_query=alcohol+addiction+recovery+documentary' },
-        { name: 'Educational Webinars', url: 'https://www.samhsa.gov/training' },
+        { name: 'Alcohol Addiction Recovery Stories', url: 'https://www.youtube.com/results?search_query=alcohol+recovery+success+stories' },
+        { name: 'Understanding Alcoholism - Educational Content', url: 'https://www.youtube.com/results?search_query=understanding+alcoholism+education' },
       ],
     },
     {
@@ -96,8 +96,8 @@ const Education = () => {
       items: [
         { name: 'Alcoholics Anonymous (AA)', url: 'https://www.aa.org/' },
         { name: 'Narcotics Anonymous (NA)', url: 'https://www.na.org/' },
-        { name: 'SAMHSA National Helpline', url: 'https://www.samhsa.gov/find-help/national-helpline' },
         { name: 'National Council on Alcoholism', url: 'https://www.ncadd.org/' },
+        { name: 'Al-Anon Family Groups', url: 'https://al-anon.org/' },
       ],
     },
   ]
@@ -107,7 +107,7 @@ const Education = () => {
       <Header />
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="relative min-h-[60vh] flex items-center bg-gradient-to-br from-neutral-50 via-sage-50/30 to-sage-100/20">
+        <section className="relative min-h-[60vh] flex items-center bg-gradient-to-br from-white via-white/30 to-white/20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20 w-full">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -115,8 +115,8 @@ const Education = () => {
               transition={{ duration: 0.8 }}
               className="text-center"
             >
-              <p className="text-sage-600 text-sm font-semibold mb-4">• EDUCATION</p>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-sage-800 mb-6">
+              <p className="text-[#83997d] text-sm font-semibold mb-4">• EDUCATION</p>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#83997d] mb-6">
                 Education & Resources
               </h1>
               <p className="text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed mb-8">
@@ -136,7 +136,7 @@ const Education = () => {
               transition={{ duration: 0.8 }}
               className="text-center mb-16"
             >
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-sage-800 mb-6">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#83997d] mb-6">
                 Key Topics & Learning Areas
               </h2>
               <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
@@ -153,10 +153,10 @@ const Education = () => {
                   viewport={{ once: true, margin: '-50px' }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   whileHover={{ y: -8, transition: { duration: 0.2 } }}
-                  className="bg-sage-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"
                 >
                   <div className="text-5xl mb-4">{topic.icon}</div>
-                  <h3 className="text-2xl font-bold text-sage-800 mb-3">
+                  <h3 className="text-2xl font-bold text-[#83997d] mb-3">
                     {topic.title}
                   </h3>
                   <p className="text-neutral-600 leading-relaxed mb-6">
@@ -166,7 +166,7 @@ const Education = () => {
                     {topic.points.map((point, idx) => (
                       <li key={idx} className="flex items-start text-sm text-neutral-600">
                         <svg
-                          className="w-5 h-5 text-sage-600 mr-2 flex-shrink-0 mt-0.5"
+                          className="w-5 h-5 text-[#83997d] mr-2 flex-shrink-0 mt-0.5"
                           fill="none"
                           stroke="currentColor"
                           viewBox="0 0 24 24"
@@ -189,7 +189,7 @@ const Education = () => {
         </section>
 
         {/* Resources Section */}
-        <section className="relative py-16 lg:py-20 bg-gradient-to-br from-sage-50 via-neutral-50 to-white">
+        <section className="relative py-16 lg:py-20 bg-gradient-to-br from-white via-white to-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -198,7 +198,7 @@ const Education = () => {
               transition={{ duration: 0.8 }}
               className="text-center mb-16"
             >
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-sage-800 mb-6">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#83997d] mb-6">
                 Additional Resources
               </h2>
               <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
@@ -214,9 +214,10 @@ const Education = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: '-50px' }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="bg-white rounded-2xl p-8 shadow-lg"
+                  className="rounded-2xl p-8 shadow-lg"
+                  style={{ backgroundColor: '#83997d' }}
                 >
-                  <h3 className="text-xl font-bold text-sage-800 mb-6">
+                  <h3 className="text-xl font-bold text-white mb-6">
                     {resource.category}
                   </h3>
                   <ul className="space-y-3">
@@ -226,7 +227,7 @@ const Education = () => {
                           href={item.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-neutral-600 hover:text-sage-600 underline transition-colors duration-200 flex items-start"
+                          className="text-white hover:text-white/80 underline transition-colors duration-200 flex items-start"
                         >
                           <svg
                             className="w-5 h-5 mr-2 flex-shrink-0 mt-0.5"
@@ -253,7 +254,7 @@ const Education = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="relative py-16 lg:py-20 bg-sage-800">
+        <section className="relative py-16 lg:py-20 bg-[#83997d]">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -270,7 +271,8 @@ const Education = () => {
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Link
                   to="/contact"
-                  className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-sage-800 bg-white rounded-full hover:bg-sage-50 transition-colors duration-200 shadow-lg"
+                  className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white rounded-full hover:bg-white/20 transition-colors duration-200 shadow-lg"
+                  style={{ backgroundColor: '#83997d' }}
                 >
                   Get Started Today
                   <svg

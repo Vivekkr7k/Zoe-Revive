@@ -28,7 +28,7 @@ const FAQSection = () => {
   }
 
   return (
-    <section className="relative min-h-[80vh] flex items-center bg-neutral-50">
+    <section className="relative min-h-[80vh] flex items-center bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20 w-full">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Section - FAQ */}
@@ -40,11 +40,11 @@ const FAQSection = () => {
           >
             {/* Header */}
             <div className="mb-8 lg:mb-10">
-              <p className="text-sage-600 text-sm font-semibold mb-3 flex items-center">
-                <span className="w-2 h-2 rounded-full bg-sage-600 mr-2"></span>
+              <p className="text-[#83997d] text-sm font-semibold mb-3 flex items-center">
+                <span className="w-2 h-2 rounded-full bg-[#83997d] mr-2"></span>
                 FAQ
               </p>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-sage-800 leading-tight">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#83997d] leading-tight">
                 What you should know about our treatment
               </h2>
             </div>
@@ -54,17 +54,18 @@ const FAQSection = () => {
               {faqs.map((faq, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-2xl overflow-hidden shadow-md border border-neutral-200"
+                  className="rounded-2xl overflow-hidden shadow-md border border-[#83997d]"
+                  style={{ backgroundColor: '#83997d' }}
                 >
                   <button
                     onClick={() => toggleFAQ(index)}
-                    className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-neutral-50 transition-colors"
+                    className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-[#83997d]/90 transition-colors"
                   >
                     <div className="flex items-center space-x-4 flex-1">
-                      <span className="text-sage-600 font-bold text-lg flex-shrink-0">
+                      <span className="text-white font-bold text-lg flex-shrink-0">
                         {index + 1}.
                       </span>
-                      <span className="text-lg font-semibold text-sage-800">
+                      <span className="text-lg font-semibold text-white">
                         {faq.question}
                       </span>
                     </div>
@@ -74,7 +75,7 @@ const FAQSection = () => {
                       className="flex-shrink-0 ml-4"
                     >
                       <svg
-                        className="w-6 h-6 text-sage-600"
+                        className="w-6 h-6 text-white"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -99,7 +100,7 @@ const FAQSection = () => {
                         className="overflow-hidden"
                       >
                         <div className="px-6 pb-5 pl-14">
-                          <p className="text-neutral-600 leading-relaxed">
+                          <p className="text-white/90 leading-relaxed">
                             {faq.answer}
                           </p>
                         </div>
@@ -132,13 +133,14 @@ const FAQSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className="absolute bottom-8 left-1/2 transform -translate-x-1/2 bg-white rounded-2xl p-6 shadow-xl max-w-xs"
+                className="absolute bottom-8 left-1/2 transform -translate-x-1/2 rounded-2xl p-6 shadow-xl max-w-xs"
+                style={{ backgroundColor: '#83997d' }}
               >
                 <div className="flex flex-col items-center text-center">
                   {/* Question Mark Icon */}
-                  <div className="w-12 h-12 rounded-full bg-sage-100 flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center mb-4">
                     <svg
-                      className="w-6 h-6 text-sage-600"
+                      className="w-6 h-6 text-[#83997d]"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -151,7 +153,7 @@ const FAQSection = () => {
                       />
                     </svg>
                   </div>
-                  <p className="text-sage-800 font-bold text-lg">
+                  <p className="text-white font-bold text-lg">
                     Relax, We've Got the Answers
                   </p>
                 </div>

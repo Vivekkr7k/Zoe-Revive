@@ -34,7 +34,7 @@ const AboutUs = () => {
       <Header />
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="relative min-h-[80vh] flex items-center bg-gradient-to-br from-neutral-50 via-sage-50/30 to-sage-100/20">
+        <section className="relative min-h-[80vh] flex items-center bg-gradient-to-br from-white via-white/50 to-white/30">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20 w-full">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <motion.div
@@ -42,14 +42,14 @@ const AboutUs = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
               >
-                <p className="text-sage-600 text-sm font-semibold mb-4">• ABOUT US</p>
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-sage-800 mb-4">
+                <p className="text-[#83997d] text-sm font-semibold mb-4">• ABOUT US</p>
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#83997d] mb-4">
                   ZOE REVIVE TRUST
                 </h1>
-                <p className="text-lg text-sage-600 font-medium italic mb-6">
+                <p className="text-lg text-[#83997d] font-medium italic mb-6">
                   Perceiving Change
                 </p>
-                <h2 className="text-3xl sm:text-4xl font-bold text-sage-800 mb-6">
+                <h2 className="text-3xl sm:text-4xl font-bold text-[#83997d] mb-6">
                   The Place Where Recovery Begins
                 </h2>
                 <p className="text-lg text-neutral-600 leading-relaxed mb-6">
@@ -64,7 +64,7 @@ const AboutUs = () => {
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                   <Link
                     to="/contact"
-                    className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-sage-600 rounded-full hover:bg-sage-700 transition-colors duration-200 shadow-lg shadow-sage-600/25"
+                    className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-[#83997d] rounded-full hover:bg-[#83997d] transition-colors duration-200 shadow-lg shadow-[#83997d]/25"
                   >
                     Get in Touch
                     <svg
@@ -112,7 +112,7 @@ const AboutUs = () => {
               transition={{ duration: 0.8 }}
               className="text-center mb-16"
             >
-              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-sage-800 mb-6">
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#83997d] mb-6">
                 Our Core Values
               </h2>
               <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
@@ -131,7 +131,7 @@ const AboutUs = () => {
                   className="text-center"
                 >
                   <div className="text-6xl mb-4">{value.icon}</div>
-                  <h3 className="text-2xl font-bold text-sage-800 mb-3">
+                  <h3 className="text-2xl font-bold text-[#83997d] mb-3">
                     {value.title}
                   </h3>
                   <p className="text-neutral-600 leading-relaxed">
@@ -144,7 +144,7 @@ const AboutUs = () => {
         </section>
 
         {/* Our Team Section */}
-        <section className="relative min-h-[80vh] flex items-center bg-gradient-to-br from-sage-50/50 via-neutral-50 to-white">
+        <section className="relative min-h-[80vh] flex items-center bg-gradient-to-br from-white/50 via-white to-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20 w-full">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -153,8 +153,8 @@ const AboutUs = () => {
               transition={{ duration: 0.8 }}
               className="text-center mb-16"
             >
-              <p className="text-sage-600 text-sm font-semibold mb-3">• OUR TEAM</p>
-              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-sage-800 mb-6">
+              <p className="text-[#83997d] text-sm font-semibold mb-3">• OUR TEAM</p>
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#83997d] mb-6">
                 Our Team
               </h2>
               <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
@@ -186,19 +186,20 @@ const AboutUs = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: '-50px' }}
                   transition={{ duration: 0.6, delay: index * 0.05 }}
-                  className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-sage-100"
+                  className="rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-[#83997d]"
+                  style={{ backgroundColor: '#83997d' }}
                 >
                   <div className="flex items-start space-x-4">
                     <div className="flex-shrink-0">
-                      <div className="w-12 h-12 rounded-full bg-sage-500 flex items-center justify-center text-white font-bold text-lg">
+                      <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center text-white font-bold text-lg">
                         {member.name.charAt(0)}
                       </div>
                     </div>
                     <div className="flex-grow">
-                      <h3 className="text-lg font-bold text-sage-800 mb-1">
+                      <h3 className="text-lg font-bold text-white mb-1">
                         {member.name}
                       </h3>
-                      <p className="text-sm text-sage-600 font-medium">
+                      <p className="text-sm text-white/90 font-medium">
                         {member.role}
                       </p>
                     </div>
